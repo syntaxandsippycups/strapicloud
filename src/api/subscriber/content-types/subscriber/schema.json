@@ -15,6 +15,48 @@
       "type": "email",
       "required": true,
       "unique": true
+    },
+
+    "journalUpdates": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "kidsProducts": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "personalizedBooks": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "studioProducts": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "Blog",
+        "Kids Landing Page",
+        "Book Waitlist",
+        "Studio",
+        "Homepage",
+        "Checkout",
+        "Manual"
+      ]
+    },
+
+    "subscribedAt": {
+      "type": "datetime"
     }
   }
 }
